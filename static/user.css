@@ -1,0 +1,14 @@
+   /* Footer: Solid Black */
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Icon Sizing */
+        .fa-3x {
+            font-size: 3rem;
+        }
+
+   
