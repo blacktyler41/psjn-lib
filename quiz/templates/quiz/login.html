@@ -7,20 +7,229 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="icon" href="{% static 'logo.JPG' %}" type="image/gif" sizes="16x16">
-</head>
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#0d47a1,#1565c0);
+font-family:Arial,sans-serif;
+padding:20px;
+}
+
+/* CARD */
+.card{
+width:100%;
+max-width:400px;
+background:#fff;
+padding:40px 30px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+animation:fadeIn 0.5s ease;
+}
+
+/* LOGO */
+.logo{
+width:90px;
+height:90px;
+object-fit:contain;
+margin-bottom:12px;
+}
+
+/* TITLES */
+h2{
+font-size:24px;
+color:#0d47a1;
+margin-bottom:5px;
+}
+
+.subtitle{
+color:#666;
+font-size:14px;
+margin-bottom:25px;
+}
+
+/* INPUTS */
+.input-group{
+margin-bottom:15px;
+}
+
+input{
+width:100%;
+padding:14px;
+border-radius:10px;
+border:1px solid #ddd;
+background:#f8f9fa;
+font-size:15px;
+outline:none;
+transition:0.3s;
+}
+
+input:focus{
+border-color:#0d47a1;
+background:#fff;
+box-shadow:0 0 0 3px rgba(13,71,161,0.1);
+}
+
+/* BUTTON */
+button{
+width:100%;
+padding:14px;
+background:#0d47a1;
+color:white;
+border:none;
+border-radius:10px;
+font-size:15px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#1565c0;
+transform:translateY(-2px);
+}
+
+/* ALERTS */
+.error{
+background:#ffebee;
+color:#c62828;
+padding:10px;
+border-radius:8px;
+font-size:13px;
+margin-bottom:15px;
+}
+
+.success{
+background:#e8f5e9;
+color:#2e7d32;
+padding:12px;
+border-radius:8px;
+font-size:13px;
+margin-bottom:15px;
+line-height:1.5;
+}
+
+/* LINKS */
+a{
+color:#0d47a1;
+text-decoration:none;
+font-weight:bold;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+/* FOOTER */
+.footer{
+margin-top:20px;
+font-size:12px;
+color:#777;
+line-height:1.5;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width:480px){
+
+.card{
+padding:30px 20px;
+border-radius:15px;
+}
+
+h2{
+font-size:20px;
+}
+
+.subtitle{
+font-size:13px;
+}
+
+input{
+padding:12px;
+font-size:14px;
+}
+
+button{
+padding:12px;
+font-size:14px;
+}
+
+.logo{
+width:75px;
+height:75px;
+}
+
+}
+
+@media(max-width:320px){
+
+.card{
+padding:25px 15px;
+}
+
+h2{
+font-size:18px;
+}
+
+.subtitle{
+font-size:12px;
+}
+
+}
+</style>
+  </head>
 <body>
-  <div class="container">
-    <h2>Login</h2>
-      <form action="{% url 'login'%}" method="post">
-        {% csrf_token %}
-        <div class="input-box">
-           <input type="text", name="username", placeholder="Username">
-        </div>
-        <div class="input-box">
-           <input type="password", name="password", placeholder="password">
-        </div>
-        <input type="submit" class="btn", value="login">
-      </form>
+ <div class="card">
+
+<img class="logo" src="{% static 'images/pssj-nkumba-logo.png' %}" alt="Logo">
+
+<h2>Petit Seminaire Saint Jean  Nkumba </h2>
+
+<div class="subtitle">
+Digital Library System
+</div>
+      
+<form method="POST">
+
+    {% csrf_token %}
+
+    <input type="hidden" name="next" value="{{ request.GET.next|default:'' }}">
+
+    <div class="input-group">
+        <input type="text" name="username" placeholder="Username" required>
+    </div>
+
+    <div class="input-group">
+        <input type="password" name="password" placeholder="Password" required>
+    </div>
+
+    <button type="submit">
+        Login
+    </button>
+
+</form>
 
       <div class="warning-message">
         {% if message %}
@@ -31,10 +240,24 @@
 
   </div>
 
-<!--Translator-->
+<!-- Translator -->
 <div class="gtranslate_wrapper"></div>
-<script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"languages":["en","fr","de","it","es","hi","ar","zh-CN","ru","af","sw","ur","am","xh"],"wrapper_selector":".gtranslate_wrapper","flag_size":16,"switcher_horizontal_position":"right","switcher_vertical_position":"bottom","flag_style":"3d","alt_flags":{"en":"usa"},"switcher_text_color":"#f7f7f7","switcher_arrow_color":"#f2f2f2","switcher_border_color":"#161616","switcher_background_color":"#303030","switcher_background_shadow_color":"#474747","switcher_background_hover_color":"#3a3a3a","dropdown_text_color":"#eaeaea","dropdown_hover_color":"#748393","dropdown_background_color":"#474747"}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
+<!-- Translator Settings -->
+<script>
+window.gtranslateSettings = {
+  default_language: "en",
+  detect_browser_language: true,
+  languages: ["en", "fr", "sw", "la", "es", "de"], 
+  // en = English, fr = French, sw = Swahili, la = Latin, es = Spanish, de = German
+  wrapper_selector: ".gtranslate_wrapper",
+  switcher_horizontal_position: "right",
+  switcher_vertical_position: "bottom",
+  float_switcher_open_direction: "top",
+  flag_style: "3d"
+};
+</script>
+
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 
 </body>
 </html>

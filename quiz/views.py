@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Quiz, Question,Answer
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .models import Book
@@ -35,29 +35,14 @@ def logout_view(request):
 
 @login_required
 def student_dashboard(request):
-    return render(request, 'quiz/user.html')
+    return render(request, 'quiz/user.html',{
+        'count_religious': Book.objects.filter(category='religious').count(),
+        'count_science': Book.objects.filter(category='science').count(),
+        'count_other': Book.objects.filter(category='other').count(),
+        'count_all': Book.objects.count(),
+    })
 
 @login_required
-def quiz_list(request):
-    quizzes = Quiz.objects.all()
-    return render(request, 'quiz/quiz_list.html', {'quizzes': quizzes})
-
-def quiz_detail(request, pk):
-    quiz = get_object_or_404(Quiz, pk=pk)
-    if request.method == 'POST':
-        score = 0
-        questions = quiz.questions.all()
-        for question in questions:
-            selected_answer = request.POST.get(str(question.id))
-            if selected_answer:
-                answer = Answer.objects.get(id=selected_answer)
-                if answer.is_correct:
-                    score += 1
-        return render(request, 'quiz/result.html', {'quiz': quiz, 'score': score, 'total': questions.count(), 'percentage': score * 100 / questions.count()})
-    else:
-        return render(request, 'quiz/quiz_detail.html', {'quiz': quiz})
-
-
 def book_list(request):
     books = Book.objects.all()
     return render(request, 'quiz/book_list.html', {'books': books})
@@ -72,3 +57,26 @@ def add_book(request):
         form = BookForm()
     return render(request, 'quiz/add_book.html', {'form': form})
 
+
+def book_list(request):
+    # ?category=science in the address gives "science". If missing, use "all"
+    q = request.GET.get('q', '').strip()
+    selected = request.GET.get('category', 'all')
+
+    # Treat unknown values like ?category=abc as "all"
+    if selected not in ('religious', 'science', 'other'):
+        selected = 'all'
+
+    books = Book.objects.all()
+    if selected != 'all':
+        books = books.filter(category=selected)
+
+    for word in q.split():
+        books = books.filter(title__icontains=word)
+
+    return render(request, 'quiz/book_list.html', {
+        'books': books,
+        'selected': selected,
+        'q': q,
+        'result_count': books.count(),
+    })

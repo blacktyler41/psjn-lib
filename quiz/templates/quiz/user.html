@@ -1,3 +1,6 @@
+{% extends "quiz/base.html" %}
+
+{% block content %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -11,49 +14,44 @@
     <link rel="stylesheet" href="{% static 'user.css'%}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="{% static 'logo.JPG' %}" type="image/gif" sizes="16x16">
+<style>
+    .category-card {
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+        }
+
+.hero {
+        position: relative;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        background: url("{% static 'sky-header.png' %}") center / cover no-repeat;
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        
+    }
+    .hero > .container {
+        position: relative; /* keeps content above the overlay */
+        z-index: 1;
+    }
+</style>
 </head>
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'student_dashboard' %}"><img src="{% static 'Codex_logo.jpeg' %}" alt="Logo" width="70" height="70" class="d-inline-block rounded-circle"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'quiz_list' %}">Quizzes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'book_list' %}">Books</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        More
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{% url 'dev' %}">Devellopers</a></li>
-                        <li><a class="dropdown-item" href="#contact">Contact</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#testimonials">Testimony</a></li>
-                    </ul>
-                </li>
-            </ul>
-            
-            <!-- CTA Button -->
-            <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
-        </div>
-    </div>
-</nav>
+
 
 <!-- Hero Section -->
-<header class="bg-primary text-white text-center py-5">
+<header class="hero text-white text-center py-5">
     <div class="container">
-        <h1> Welcome, {{request.user.username}}.</h1>
+        <h1>Welcome, {{ request.user.username }}.</h1>
         <section id="testimonials">
             <div class="text-center">
                 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -62,19 +60,17 @@
                             <p>Welcome to your dashboard</p>
                         </div>
                         <div class="carousel-item">
-                            <p>We offer you best solutions for your needs </p>
+                            <p>We offer you best solutions for your needs</p>
                         </div>
                         <div class="carousel-item">
-                            <p>How would you like to be productive today? </p>
+                            <p>How would you like to be productive today?</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
     </div>
 </header>
-
 <!-- About Us Section -->
 <section id="about" class="py-5">
     <div class="container">
@@ -84,36 +80,62 @@
 </section>
 
 
-<!-- Services Section -->
-
-<section id="services" class="py-5 bg-light">
-    <div class="container text-center">
-        <h2 class="p-1">Our Services</h2>
-        <div class="row my-5">
-            <div class="col-md-4">
-                <i class="fas fa-pen fa-5x text-primary"></i>
-                <h4>E-test</h4>
-                <p>We challenge and help to train your brain muscle.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fas fa-book fa-5x text-success"></i>
-                <h4>E-books</h4>
-                <p>Boost your knwoledge through different books.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fas fa-chart-line fa-5x text-warning"></i>
-                <h4>Active learning</h4>
-                <p>Test your learning progress.</p>
-            </div>
+<!-- book dashboard -->
+<div class="container mt-5">
+ 
+    <h2 class="text-center mb-4">Library Dashboard</h2>
+ 
+    <!-- Three category cards. Each card opens the book list filtered by that category -->
+    <div class="row g-3 mb-4 text-center">
+ 
+        <div class="col-12 col-md-4">
+            <a href="{% url 'book_list' %}?category=religious"
+               class="card category-card shadow-sm h-100 border-success text-decoration-none text-dark">
+                <div class="card-body">
+                    <i class="fa-solid fa-book-bible fa-2x text-success mb-2"></i>
+                    <h5 class="card-title">Religious</h5>
+                    <p class="card-text mb-0">{{ count_religious }} book{{ count_religious|pluralize }}</p>
+                </div>
+            </a>
+        </div>
+ 
+        <div class="col-12 col-md-4">
+            <a href="{% url 'book_list' %}?category=science"
+               class="card category-card shadow-sm h-100 border-primary text-decoration-none text-dark">
+                <div class="card-body">
+                    <i class="fa-solid fa-flask fa-2x text-primary mb-2"></i>
+                    <h5 class="card-title">Sciences</h5>
+                    <p class="card-text mb-0">{{ count_science }} book{{ count_science|pluralize }}</p>
+                </div>
+            </a>
+        </div>
+ 
+        <div class="col-12 col-md-4">
+            <a href="{% url 'book_list' %}?category=other"
+               class="card category-card shadow-sm h-100 border-secondary text-decoration-none text-dark">
+                <div class="card-body">
+                    <i class="fa-solid fa-layer-group fa-2x text-secondary mb-2"></i>
+                    <h5 class="card-title">Others</h5>
+                    <p class="card-text mb-0">{{ count_other }} book{{ count_other|pluralize }}</p>
+                </div>
+            </a>
         </div>
     </div>
-</section>
-
+ 
+    <!-- Opens the full list with no filter -->
+    <div class="text-center mb-5">
+        <a href="{% url 'book_list' %}" class="btn btn-dark px-5">
+            View all {{ count_all }} book{{ count_all|pluralize }}
+        </a>
+    </div>
+ 
+</div>
+ 
 
 <!-- Testimonials Section -->
 <section id="testimonials" class="py-5 bg-info">
     <div class="container text-center">
-        <h2>What Learners Say</h2>
+        <h2>recent books</h2>
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -143,14 +165,6 @@
     </div>
 </section>
 
-<!--Translator-->
-<div class="gtranslate_wrapper"></div>
-<script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"languages":["en","fr","de","it","es","hi","ar","zh-CN","ru","af","sw","ur","am","xh"],"wrapper_selector":".gtranslate_wrapper","flag_size":"16","switcher_horizontal_position":"right","switcher_vertical_position":"bottom","flag_style":"3d","alt_flags":{"en":"usa"},"switcher_text_color":"#f7f7f7","switcher_arrow_color":"#f2f2f2","switcher_border_color":"#161616","switcher_background_color":"#303030","switcher_background_shadow_color":"#474747","switcher_background_hover_color":"#3a3a3a","dropdown_text_color":"#eaeaea","dropdown_hover_color":"#748393","dropdown_background_color":"#474747"}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-4">
-    <p>&copy; 2025 Codex. All Rights Reserved.</p>
-</footer>
 
 
 
@@ -158,3 +172,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+{% endblock %}
