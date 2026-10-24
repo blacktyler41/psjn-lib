@@ -7,6 +7,8 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .models import Book
 from .forms import BookForm
+from django.core.paginator import Paginator
+
 
 
 def index(request):
@@ -35,12 +37,15 @@ def logout_view(request):
 
 @login_required
 def student_dashboard(request):
+    recent_books = Book.objects.order_by('-id')[:6]
     return render(request, 'quiz/user.html',{
         'count_religious': Book.objects.filter(category='religious').count(),
         'count_science': Book.objects.filter(category='science').count(),
         'count_other': Book.objects.filter(category='other').count(),
         'count_all': Book.objects.count(),
+        'recent_books': recent_books,
     })
+
 
 @login_required
 def book_list(request):
@@ -59,6 +64,8 @@ def add_book(request):
 
 
 def book_list(request):
+   
+   
     # ?category=science in the address gives "science". If missing, use "all"
     q = request.GET.get('q', '').strip()
     selected = request.GET.get('category', 'all')
@@ -74,9 +81,23 @@ def book_list(request):
     for word in q.split():
         books = books.filter(title__icontains=word)
 
+
+
+# Divide books into pages of 50
+    paginator = Paginator(books, 50)
+
+# Find the requested page
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+# Send data to your existing HTML template
     return render(request, 'quiz/book_list.html', {
-        'books': books,
-        'selected': selected,
-        'q': q,
-        'result_count': books.count(),
-    })
+    'books': page_obj.object_list,
+    'page_obj': page_obj,
+    'selected': selected,
+    'q': q,
+    'result_count': paginator.count,
+   })
+    
+    
+    

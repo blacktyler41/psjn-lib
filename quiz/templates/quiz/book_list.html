@@ -53,6 +53,54 @@
     </p>
  
     <table class="table table-bordered table-hover align-middle bg-white">
+    
+<!-- Gmail-style pagination -->
+<div class="d-flex justify-content-end align-items-center gap-3 mb-3">
+
+    <!-- Shows the current range and total number of books -->
+    <span class="text-muted small">
+        {% if page_obj.paginator.count > 0 %}
+            {{ page_obj.start_index }}–{{ page_obj.end_index }}
+            of {{ page_obj.paginator.count }}
+        {% else %}
+            0 of 0
+        {% endif %}
+    </span>
+
+    <!-- Previous page button -->
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}{% if q %}&q={{ q|urlencode }}{% endif %}{% if selected != 'all' %}&category={{ selected|urlencode }}{% endif %}"
+           class="btn btn-light btn-sm"
+           aria-label="Previous page"
+           title="Previous page">
+            <i class="fa-solid fa-chevron-left"></i>
+        </a>
+    {% else %}
+        <button class="btn btn-light btn-sm"
+                disabled
+                aria-label="Previous page">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+    {% endif %}
+
+    <!-- Next page button -->
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}{% if q %}&q={{ q|urlencode }}{% endif %}{% if selected != 'all' %}&category={{ selected|urlencode }}{% endif %}"
+           class="btn btn-light btn-sm"
+           aria-label="Next page"
+           title="Next page">
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+    {% else %}
+        <button class="btn btn-light btn-sm"
+                disabled
+                aria-label="Next page">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    {% endif %}
+
+</div>
+
         <thead class="table-dark">
             <tr>
                 <th>Book</th>

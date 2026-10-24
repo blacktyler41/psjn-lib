@@ -29,7 +29,10 @@
         min-height: 60vh;
         display: flex;
         align-items: center;
+        
         background: url("{% static 'sky-header.png' %}") center / cover no-repeat;
+
+        
     }
     .hero::before {
         content: "";
@@ -49,7 +52,7 @@
 
 
 <!-- Hero Section -->
-<header class="hero text-white text-center py-5">
+<div class="hero text-white text-center py-5">
     <div class="container">
         <h1>Welcome, {{ request.user.username }}.</h1>
         <section id="testimonials">
@@ -57,25 +60,25 @@
                 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <p>Welcome to your dashboard</p>
+                            <p>Welcome to the Petit Séminaire Saint-Jean Nkumba E-Library</p>
                         </div>
                         <div class="carousel-item">
-                            <p>We offer you best solutions for your needs</p>
+                            <p>A place to grow in faith, knowledge, and wisdom.</p>
                         </div>
                         <div class="carousel-item">
-                            <p>How would you like to be productive today?</p>
+                            <p>Explore our digital library.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-</header>
+</div>
 <!-- About Us Section -->
 <section id="about" class="py-5">
     <div class="container">
-        <h2 class="text-center">About Us</h2>
-        <p class="text-center">We are dedicated to providing the best learning experience.</p>
+      
+        <p class="text-center">Discover books, study materials and digital resources to grow in wisdom, faith and understanding</p>
     </div>
 </section>
 
@@ -133,19 +136,33 @@
  
 
 <!-- Testimonials Section -->
-<section id="testimonials" class="py-5 bg-info">
+<section id="testimonials" class="py-5 bg-primary">
     <div class="container text-center">
         <h2>Recent books</h2>
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+                
+                {% for book in recent_books %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <div class="col-md-4 mx-auto">
+                <div class="card h-100 text-center p-3">
+                
+                            <h5>{{ book.title }}</h5>
+                            
+                            <a href="{{ book.link }}" class="btn btn-primary"
+                               target="_blank" rel="noopener noreferrer">
+                                Read Book
+                            </a>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+                {% empty %}
                 <div class="carousel-item active">
-                    <p>"Best service ever! Highly recommend."</p>
-                    <h5>- KIRORI Ursi S1</h5>
+                    <p>No recent books available.</p>
                 </div>
-                <div class="carousel-item">
-                    <p>"Amazing experience, great webapp."</p>
-                    <h5>- TWIZERIMANA Ivan S5</h5>
-                </div>
+                {% endfor %}
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -156,16 +173,6 @@
         </div>
     </div>
 </section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-        <h2 id="contact">Consult Us</h2>
-        <p>In the Computer Lab of Petit Seminaire Saint-Jean Nkumba</p>
-    </div>
-</section>
-
-
 
 
 <!-- Bootstrap JS -->
