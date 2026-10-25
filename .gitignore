@@ -1,0 +1,6 @@
+.env
+data.json
+db.sqlite3
+db.sqlite3.backup
+local_users.json
+project_data.json

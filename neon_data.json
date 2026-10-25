@@ -1,0 +1,1079 @@
+[
+  {
+    "model": "quiz.book",
+    "pk": 5,
+    "fields": {
+      "title": "Maths S1",
+      "Drive_link": "https://drive.google.com/file/d/1nBrD_E5ank83JckCZl-kX71Uu4lTj6m3/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 6,
+    "fields": {
+      "title": "Maths S2",
+      "Drive_link": "https://drive.google.com/file/d/14BAut7oFw4_6KB9QviHFCcOs9IAZW_1V/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 7,
+    "fields": {
+      "title": "Maths S3",
+      "Drive_link": "https://drive.google.com/file/d/1NGIg3mmgzUID4emdElLEpJifKc2SKhvs/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 8,
+    "fields": {
+      "title": "Maths S4",
+      "Drive_link": "https://drive.google.com/file/d/1WMdByoXKi0GgRHpy2IhLwnCowsQT075t/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 9,
+    "fields": {
+      "title": "Maths S5",
+      "Drive_link": "https://drive.google.com/file/d/1x3_xPfHJS5LjjwNvIk03hI0mvufLjZyF/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 10,
+    "fields": {
+      "title": "Maths S6",
+      "Drive_link": "https://drive.google.com/file/d/1k7lWXqwjXvietnJitrEe2ucyIwy_lwfo/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 11,
+    "fields": {
+      "title": "Chemistry S1",
+      "Drive_link": "https://drive.google.com/file/d/1jhUvENmvWg1-sis0CR_eE36yRDlIVSmr/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 12,
+    "fields": {
+      "title": "Chemistry S2",
+      "Drive_link": "https://drive.google.com/file/d/1_4cMnNPopgfzy9RiZu_tEzsBay2JMdzW/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 13,
+    "fields": {
+      "title": "Chemistry S3",
+      "Drive_link": "https://drive.google.com/file/d/1LcaWmyJaNNOIC9PBUq0lDHsXanqfwfNd/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 14,
+    "fields": {
+      "title": "Chemistry S4",
+      "Drive_link": "https://drive.google.com/file/d/1PcSlebdiAmE294ezpvAy1uQVfVZRbOga/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 15,
+    "fields": {
+      "title": "Chemistry S5",
+      "Drive_link": "https://drive.google.com/file/d/1tjLrHnq_Th1WcttLqmpaLTPBtggI-tzC/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 16,
+    "fields": {
+      "title": "Chemistry S6",
+      "Drive_link": "https://drive.google.com/file/d/1Z448mHE9gpkvODbGoqOp5ppEMBRuAw1U/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 17,
+    "fields": {
+      "title": "Computer Science S4",
+      "Drive_link": "https://drive.google.com/file/d/1z3Q1MBP2PAhMweSO7AxPnN_CppO_kutr/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 18,
+    "fields": {
+      "title": "Computer Science S5",
+      "Drive_link": "https://drive.google.com/file/d/1yOA-iS4rsKCzp-mXFd1c1DA86sNio2Ap/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 19,
+    "fields": {
+      "title": "Computer Science S6",
+      "Drive_link": "https://drive.google.com/file/d/1Qz2PNi4t1g8B8dRsZtcIUmyoDyHMQtgG/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 20,
+    "fields": {
+      "title": "ICT S1",
+      "Drive_link": "https://drive.google.com/file/d/1Gq6SphQvIFNYxfOdz4hKOc5Oeq9XNVwC/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 21,
+    "fields": {
+      "title": "ICT S2",
+      "Drive_link": "https://drive.google.com/file/d/1XUPioGrZfl29gakftGPFHivlgE1iZhxx/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 22,
+    "fields": {
+      "title": "ICT S3",
+      "Drive_link": "https://drive.google.com/file/d/1gJlvAlTypj_JXgliWv755jmPqQGk2o_Y/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 23,
+    "fields": {
+      "title": "Geography S1",
+      "Drive_link": "https://drive.google.com/file/d/1G6ZX8WTehvYdGAPOXkooprXikk9zndos/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 24,
+    "fields": {
+      "title": "Geography S2",
+      "Drive_link": "https://drive.google.com/file/d/1YQD_aJoKpmX3ELUQz70-bEGuQkZOtq2E/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 25,
+    "fields": {
+      "title": "Geography S3",
+      "Drive_link": "https://drive.google.com/file/d/1ZVeyR2q_oeGwoTiQpw-IXFQM4dAWqCMU/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 26,
+    "fields": {
+      "title": "History S1",
+      "Drive_link": "https://drive.google.com/file/d/1xbceUyTkxN0n0-lds5l1ID9AgB9PMigf/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 27,
+    "fields": {
+      "title": "History S2",
+      "Drive_link": "https://drive.google.com/file/d/1p1PMu8rOR0dediQkzOODR8n_-2T1leQg/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 28,
+    "fields": {
+      "title": "History S3",
+      "Drive_link": "https://drive.google.com/file/d/1Jc6mqoxPRelTnPBX5maL-ZQBcpQx7KLH/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 29,
+    "fields": {
+      "title": "Entrepreneurship S1",
+      "Drive_link": "https://drive.google.com/file/d/1-tNtg2g5hysGdBdGI6WiOf61NKG8cezr/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 30,
+    "fields": {
+      "title": "Entrepreneurship S2",
+      "Drive_link": "https://drive.google.com/file/d/1gxSvgEWoeV6Cru822qD2YSs2EgHGoHBQ/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 31,
+    "fields": {
+      "title": "Entrepreneurship S3",
+      "Drive_link": "https://drive.google.com/file/d/1UWxxpSHIrMsN1Rf80MIZedjo0WDuJjaH/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 32,
+    "fields": {
+      "title": "Entrepreneurship S4",
+      "Drive_link": "https://drive.google.com/file/d/1LBSsvtGAEb7HEZscqrg_nzEHT-a0ZF9w/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 33,
+    "fields": {
+      "title": "Entrepreneurship S5",
+      "Drive_link": "https://drive.google.com/file/d/1qO1UMntWta9N9xCvE1YA0VKMHtqVCUdw/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 34,
+    "fields": {
+      "title": "GS and CS S5",
+      "Drive_link": "https://drive.google.com/file/d/18DANUoHEOCj6czvLEb8JviJzuJ3WmLa-/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 35,
+    "fields": {
+      "title": "GS and CS S6",
+      "Drive_link": "https://drive.google.com/file/d/1rstSRJ-hAwazSrNUc7W7Qsp9LHcem0eK/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 36,
+    "fields": {
+      "title": "English S1",
+      "Drive_link": "https://drive.google.com/file/d/1-NNC-LSEAgmfDfPLz80tMiShHZAWn_Un/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 37,
+    "fields": {
+      "title": "English S4",
+      "Drive_link": "https://drive.google.com/file/d/1zSs4aWI5uMohJTZH7Fz0LjveNxHnnIuC/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 38,
+    "fields": {
+      "title": "English S5",
+      "Drive_link": "https://drive.google.com/file/d/1kwU-nsmVMkSn8qIRgF8No-oPSmud4d4B/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 39,
+    "fields": {
+      "title": "English S6",
+      "Drive_link": "https://drive.google.com/file/d/1zrG92iSqkBti3LrBceS9cd-aY-yWnQKJ/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 40,
+    "fields": {
+      "title": "Fran\u00e7ais S1",
+      "Drive_link": "https://drive.google.com/file/d/1uiK_VyMy4t3Xxsu3ZK6cNX_yi7nWjcr0/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 41,
+    "fields": {
+      "title": "Fran\u00e7ais S2",
+      "Drive_link": "https://drive.google.com/file/d/1Dv5i3zqgZuBeShimYQhdVVRQgZ7PLuXl/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 42,
+    "fields": {
+      "title": "Fran\u00e7ais S3",
+      "Drive_link": "https://drive.google.com/file/d/1YCajIUMdsLRCLiYe3L49s2-yg8vDK6R7/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 43,
+    "fields": {
+      "title": "Fran\u00e7ais S4",
+      "Drive_link": "https://drive.google.com/file/d/1zr2DjD_NQYdoyS14H0lvJR87ZqWxGXJS/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 44,
+    "fields": {
+      "title": "Fran\u00e7ais S5",
+      "Drive_link": "https://drive.google.com/file/d/1e2Ze6zsKtAhgdUOkzr299GWLwYQJGRX0/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 45,
+    "fields": {
+      "title": "Fran\u00e7ais S6",
+      "Drive_link": "https://drive.google.com/file/d/1YCyd5PunheSUufK3MvDQ_eN2KZMEnnsa/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 46,
+    "fields": {
+      "title": "Kinyarwanda S2",
+      "Drive_link": "https://drive.google.com/file/d/10hcVRcHmdPPM0qQ_AWdbtNVfUBSdg_kf/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 47,
+    "fields": {
+      "title": "Kinyarwanda S3",
+      "Drive_link": "https://drive.google.com/file/d/1puxh0E2_waxSEp_0DlCjW3zRyEW5e4Yb/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 48,
+    "fields": {
+      "title": "Kinyarwanda S4",
+      "Drive_link": "https://drive.google.com/file/d/1h0tu24uJuwSewYMPY9YjhGn-VNCDRfWC/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 49,
+    "fields": {
+      "title": "Kinyarwanda S5",
+      "Drive_link": "https://drive.google.com/file/d/1nLLLOEVG1iZBQCQOfkR2YhTAZrVgdmAV/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 50,
+    "fields": {
+      "title": "Kinyarwanda S6",
+      "Drive_link": "https://drive.google.com/file/d/108OdQGN8W4EwrTF8c5YvR65LPr18SlRq/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 51,
+    "fields": {
+      "title": "Kiswahili S2",
+      "Drive_link": "https://drive.google.com/file/d/1uNoL4Nke0NPsnJjdSINhjyZ5517Hq_te/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 52,
+    "fields": {
+      "title": "Kiswahili S3",
+      "Drive_link": "https://drive.google.com/file/d/12aD985NF8uKcpgCWm2auk_tsejtVrqeO/preview",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 53,
+    "fields": {
+      "title": "Physics S1",
+      "Drive_link": "https://drive.google.com/file/d/1jL-JIcVM3xXRC6365-XLjENaI0N1dmSK/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 54,
+    "fields": {
+      "title": "Physics S2",
+      "Drive_link": "https://drive.google.com/file/d/12zlKtjKnHy-CvnhuaFaubkcSp-iSGVE5/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 55,
+    "fields": {
+      "title": "Physics S3",
+      "Drive_link": "https://drive.google.com/file/d/15C9Z1Tal0GnXktjNvE__7tUFWxBguQla/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 56,
+    "fields": {
+      "title": "Physics S4",
+      "Drive_link": "https://drive.google.com/file/d/1KBgo_u_Ni8n0D8HEpi_mu5KwxOoORbs1/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 57,
+    "fields": {
+      "title": "Physics S5",
+      "Drive_link": "https://drive.google.com/file/d/13jUc9qsTOt73ktwkeHivzJ5LFJTEcAOe/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 58,
+    "fields": {
+      "title": "Physics S6",
+      "Drive_link": "https://drive.google.com/file/d/1lU_iTSsJ89uL1Q7IH6GS-huC-C4uyHf5/preview",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 59,
+    "fields": {
+      "title": "History of church",
+      "Drive_link": "https://drive.google.com/file/d/1M7uqRBmjYVUSPrAbgGXVUdQa0-prnG3Z/preview",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 60,
+    "fields": {
+      "title": "Nature and grace",
+      "Drive_link": "https://drive.google.com/file/d/1LYeI25g5_lwAY3qIlFM1MWIVsUJiA5_R/preview",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 61,
+    "fields": {
+      "title": "Prayers of Saint Therese",
+      "Drive_link": "https://drive.google.com/file/d/1l9cp0HZig2neh6DevumLf8qEQnRRRWAG/preview",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 62,
+    "fields": {
+      "title": "What is the church",
+      "Drive_link": "https://drive.google.com/file/d/1fmBS7By1IufJxs9z4TZo0JNkn0dV4QlL/preview",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 63,
+    "fields": {
+      "title": "Saint Therese Letters",
+      "Drive_link": "https://drive.google.com/file/d/1F2sToMK1ki42_Mv1VuJnRy6xASY_-TvG/preview",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 64,
+    "fields": {
+      "title": "Biology S1 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1NYOqYEwU26p7V4H-V5TYxVnMmKpSebX9/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 65,
+    "fields": {
+      "title": "Biology S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1fhtPlpFGvOxkR2vROBiy_ldwHv6BhCft/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 66,
+    "fields": {
+      "title": "Biology S3 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1CysRTJNsvfMMF6vLUa6xAdqpb9UaJwFQ/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 67,
+    "fields": {
+      "title": "Biology S5 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1Givli34RrLBhYmbdmJXJFFF69nbf5kIm/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 68,
+    "fields": {
+      "title": "Biology S6 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1BF03kLTN68rBS2ikwfqRtgJ1Aal0VeCI/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 69,
+    "fields": {
+      "title": "Chemistry S1 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/11rMIe0VdKeb3qOlz2rtXd_lY893GmDkF/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 70,
+    "fields": {
+      "title": "Chemistry S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/16yXgVo-KvHYZDSqCJB-yTo_z2ZLV2qw8/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 71,
+    "fields": {
+      "title": "Chemistry S3 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1tZpzuGcP4WxwqS-fe_Em7ysLi0kHTcyr/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 72,
+    "fields": {
+      "title": "Chemistry S4 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1QlZt02-oUu_R-AV7j559r5hteVJZP_SP/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 73,
+    "fields": {
+      "title": "Chemistry S5 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1ePN207vkQzOPeOa9Jq_x1IydHaAZJPci/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 74,
+    "fields": {
+      "title": "Chemistry S6 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1v55_wpunWweAoSPBGcT5xBlWvipo31-o/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 75,
+    "fields": {
+      "title": "Economics S6 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/11m_wjyWpjvxFzdItKSG_SAZfpnvwDUeK/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 76,
+    "fields": {
+      "title": "English S1 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1BUb7dlDZadlvz2_G87YnIzzfuwOJG0H9/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 77,
+    "fields": {
+      "title": "English S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1ShjlrzUxHG9Nfy9rMVNJPN6NtZ8JlTOR/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 78,
+    "fields": {
+      "title": "English S5 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1uq2mM-oE4Kipv84dNNiUOnq5egBHuNpl/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 79,
+    "fields": {
+      "title": "English S6 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1NpmoBHjJfduhuWT16ARTOFnI2lR_uHna/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 80,
+    "fields": {
+      "title": "Entrepreneurship S3 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1gVciE_fQvclXqZ_vOKXVBqfYm95qvoQm/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 81,
+    "fields": {
+      "title": "Entrepreneurship S6 (new edition)&#x20;",
+      "Drive_link": "https://drive.google.com/file/d/1gIJMWI0tn8iBVGyV9eiXwRv4-Vz7bXid/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 82,
+    "fields": {
+      "title": "Entreprenuership (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1ZcZ9C3Xh0tVynfqpQVJvJ4PDQT2DRDSg/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 83,
+    "fields": {
+      "title": "Entreprenuership S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1GRf5Bh6tO_p8uvWyFA6QRnS5iQn7audR/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 84,
+    "fields": {
+      "title": "Fine arts S1 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1_rE2a80yCXDUYm90sq16n2atO2lAEgPW/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 85,
+    "fields": {
+      "title": "Fran\u00e7ais S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1BI6lQGRlmJqGexz7ct8jsweoZaqG2r_f/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 86,
+    "fields": {
+      "title": "Fran\u00e7ais S4 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1v1tj-GNlzPPpV23KVCddu29Bnli9nR8l/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 87,
+    "fields": {
+      "title": "Fran\u00e7ais S5 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1MltOAgGZ8s9x9jUjsude09fYxjyLRi4v/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 88,
+    "fields": {
+      "title": "Fran\u00e7aisS1 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1okdXkPVKyG68NHcsQ5AqqeI7UX4TClTB/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 89,
+    "fields": {
+      "title": "Geography S1 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1_WdJnCMkS-XxBgcXpchu2PgddzxSZJ9H/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 90,
+    "fields": {
+      "title": "Geography S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/16w8uljvE6i8PvgY-dR3R3O7bE7k_hDK2/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 91,
+    "fields": {
+      "title": "Geography S3 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1CIgoG7k4wY-xHPjkDaAzAICttYKwMsr3/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 92,
+    "fields": {
+      "title": "History S1 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1A7lpZ3lNTu1mf_vSimOXW2VzaKYaQuXJ/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 93,
+    "fields": {
+      "title": "History S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1SMkWwMQs1fBsxYYXvEbChpKaIsPi7A3Z/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 94,
+    "fields": {
+      "title": "History S3 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1aRGbuKE_K2LeTyreY0ajUiTF0xYh5Q0S/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 95,
+    "fields": {
+      "title": "History S4 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1Flw8-_wunYMJfIvEEbz2K5B49Eg6EBmM/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 96,
+    "fields": {
+      "title": "History S5 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1cAJWr5PS5Fwh0ACMH6k9csVO_yXZDs-D/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 97,
+    "fields": {
+      "title": "History S6 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1xsMX8WqhUN5tnAQUy2JlIpcAo0zbYdtj/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 98,
+    "fields": {
+      "title": "Home science S1 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1ELDampxejf3y_9NrahO3l4GSIBOUzyKN/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 99,
+    "fields": {
+      "title": "Home science S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/131V2zPZgQSuObhV4pnWb4OCWL2F5Vx83/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 100,
+    "fields": {
+      "title": "ICT S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1PUF2oi5OC8Zhdzcm0Adx9hc6GUNrp-Ai/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 101,
+    "fields": {
+      "title": "ICT S3 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1g5aE-9ugbLf7_gNAPGGBITnOqYnHR8bh/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 102,
+    "fields": {
+      "title": "Kinyarwanda (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1cZo2LBHQAIFG5cxjBgGwxdLO8OaV7vXD/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 103,
+    "fields": {
+      "title": "Kinyarwanda S3(new edition)",
+      "Drive_link": "https://drive.google.com/file/d/16DeydvEAzcF9XP1EPis9_c5c8A5tE5ED/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 104,
+    "fields": {
+      "title": "Kinyarwanda S5 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1FwS84sGuy4u-k_CfYYWhdVwlgnZTU-Fp/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 105,
+    "fields": {
+      "title": "Kiswahili S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1fU_A4F-NpNpjlCc-O7aaoZncNeIpr6-7/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 106,
+    "fields": {
+      "title": "Kiswahili S3 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1uKQvVUgWmChzD1JchTNKlMs3GN8cvRNY/view?usp=sharing",
+      "category": "other"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 107,
+    "fields": {
+      "title": "Maths S3 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1PVTeFswxUbRvbDTW8d1w9dfxu9xpfeXD/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 108,
+    "fields": {
+      "title": "Maths S4 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1RbCjoY7dPaJl3p4x_w5kH_TZ7Ua4N4R5/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 109,
+    "fields": {
+      "title": "Maths S5 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1FieVvasZFi-ZUq8tql-fGn4duL_5a_Yl/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 110,
+    "fields": {
+      "title": "Maths S5 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1HUIJ5Up22JhQT-GGJfHn4gtXBOgRlbUn/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 111,
+    "fields": {
+      "title": "Maths S6 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1_0bNDZp_u56Jhp9If-4A9f1V5BXmGeMv/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 112,
+    "fields": {
+      "title": "Physics S4 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1Hq0G5vF58u46btsRuswilKKr_er5Wnf4/view?usp=sharing",
+      "category": "science"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 113,
+    "fields": {
+      "title": "Religion and Ethics S1 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1vLGR-Vie9l2BwK91I3j09TargenIj8Us/view?usp=sharing",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 114,
+    "fields": {
+      "title": "Religion S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1FAU-tBptPW_VaFGBBfKP0U_wu_EHkfNZ/view?usp=sharing",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 115,
+    "fields": {
+      "title": "Religion S2 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1XnjC8VXl4D5g8tXqdzWEdwRjWqWS5EB6/view?usp=sharing",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 116,
+    "fields": {
+      "title": "Religion S4 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1BiTbaeWC-atjzi4Fcf2Vq7U-iLdv72RP/view?usp=sharing",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 117,
+    "fields": {
+      "title": "Religion S6 (new edition)",
+      "Drive_link": "https://drive.google.com/file/d/1aJJQiSehOEA1EphLb9zNeFPDzeju2ZX8/view?usp=sharing",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "quiz.book",
+    "pk": 118,
+    "fields": {
+      "title": "Holy spirit and you",
+      "Drive_link": "https://drive.google.com/file/d/18BzrHVx3hZUFW1JRrZxwYuFHCGuZUUc6/view?usp=sharing",
+      "category": "religious"
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$56jemNwuwWHbfxsld0HprA$rjyp+lqObOCEvBUP5DxORjjbV7FXBCSHC/9x18FNkMg=",
+      "last_login": "2026-10-24T15:02:39.750Z",
+      "is_superuser": true,
+      "username": "CEDRIC",
+      "first_name": "",
+      "last_name": "",
+      "email": "muhozacedric30@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-10-14T11:20:01.461Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$hBW0S8Q2saq2KXB99KaRNB$yQANltS/dTxbtYvrgqazFnW8FNAttxjIu53+N2rl06Y=",
+      "last_login": "2026-10-24T19:09:37.752Z",
+      "is_superuser": false,
+      "username": "LEPINE",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-24T18:13:06.041Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$ddrahmzIlpdGCRHIltaLp0$uRw74IheWit7Cu8aXSeKC3DDbxzonubl4JzunXEtZko=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Rolando",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-24T18:15:50.359Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

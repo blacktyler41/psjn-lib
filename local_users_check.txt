@@ -1,0 +1,5 @@
+id=1, username=arsene, active=1, staff=1, superuser=1
+id=2, username=mediaclub, active=1, staff=1, superuser=1
+id=3, username=ngabo, active=1, staff=1, superuser=1
+id=4, username=codex, active=1, staff=1, superuser=1
+id=5, username=Cedric, active=1, staff=0, superuser=0
