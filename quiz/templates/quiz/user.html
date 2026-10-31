@@ -139,7 +139,7 @@
 <section id="testimonials" class="py-5 bg-primary">
     <div class="container text-center">
         <h2>Recent books</h2>
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div id="recentBooksCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 
                 {% for book in recent_books %}
@@ -149,7 +149,7 @@
                 
                             <h5>{{ book.title }}</h5>
                             
-                            <a href="{{ book.link }}" class="btn btn-primary"
+                            <a href="{{ book.Drive_link }}" class="btn btn-primary"
                                target="_blank" rel="noopener noreferrer">
                                 Read Book
                             </a>
@@ -164,10 +164,10 @@
                 </div>
                 {% endfor %}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#recentBooksCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#recentBooksCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
