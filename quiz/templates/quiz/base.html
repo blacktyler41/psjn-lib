@@ -79,11 +79,11 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="bg-blue-900 text-gray-300 py-10 mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+<footer class="bg-blue-900 text-gray-300 pt-8 pb-20 sm:py-10 mt-8 sm:mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid gap-6 sm:gap-8 sm:grid-cols-2 md:grid-cols-3">
 
         <div>
-            <h4 class="text-white font-bold mb-4">About</h4>
+            <h4 class="text-white font-bold mb-3 sm:mb-4">About</h4>
             <p class="text-sm leading-relaxed">
                 Petit Séminaire Saint Jean Nkumba Digital Library empowers students and teachers with instant 
                 access to academic resources while upholding seminary values.
@@ -91,16 +91,16 @@
         </div>
 
         <div>
-            <h4 class="text-white font-bold mb-4">Contact</h4>
+            <h4 class="text-white font-bold mb-3 sm:mb-4">Contact</h4>
             <p class="text-sm">Ruhengeri, Rwanda</p>
-            <a href="https://petitseminairedenkumba.com/" class="text-white hover:text-blue-200 transition font-semibold no-underline">petitseminairedenkumba.com</a>
-            <p class="text-sm break-all"><a href="mailto:psnkumbaped@yahoo.com" class="text-white no-underline hover:underline">
+            <a href="https://petitseminairedenkumba.com/" class="block py-1 break-words md:text-sm lg:text-base text-white hover:text-blue-200 transition font-semibold no-underline">petitseminairedenkumba.com</a>
+            <p class="text-sm break-all"><a href="mailto:psnkumbaped@yahoo.com" class="inline-block py-1 text-white no-underline hover:underline">
   psnkumbaped@yahoo.com</a></p>
-            <p class="text-sm">+250 788 823 161</p>
+            <p class="text-sm"><a href="tel:+250788823161" class="inline-block py-1 text-gray-300 no-underline hover:underline">+250 788 823 161</a></p>
         </div>
 
-        <div>
-            <h4 class="text-white font-bold mb-4">Features</h4>
+        <div class="sm:col-span-2 md:col-span-1">
+            <h4 class="text-white font-bold mb-3 sm:mb-4">Features</h4>
             <ul class="space-y-2 text-sm">
                 <li>Digital Books </li>
                 <li>Religious Resources</li>
@@ -112,8 +112,8 @@
 
     </div>
 
-    <div class="text-center text-gray-500 text-xs mt-8 px-4">
-        © {{ now|date:"Y" }} Petit Séminaire Saint Jean Nkumba · Digital Library
+    <div class="text-center text-gray-500 text-xs mt-6 sm:mt-8 px-4">
+        © {% now "Y" %} Petit Séminaire Saint Jean Nkumba · Digital Library
     </div>
 </footer>
 <!-- MOBILE MENU SCRIPT -->
